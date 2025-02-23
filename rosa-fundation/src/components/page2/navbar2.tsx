@@ -1,6 +1,10 @@
 import React from "react";
 
-const Navbar: React.FC = () => {
+interface Navbar2Props {
+  onSwitch: () => void;
+}
+
+const Navbar2: React.FC<Navbar2Props> = ({ onSwitch }) => {
   return (
     <nav id="header" className="fixed w-full z-30 top-0 text-white">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -76,8 +80,8 @@ const Navbar: React.FC = () => {
           <button
             id="navAction"
             className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            Contacto
+            onClick={onSwitch}>
+            Cambiar diseño 1
           </button>
         </div>
       </div>
@@ -86,4 +90,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
