@@ -6,7 +6,7 @@ const PricingSection: React.FC = () => {
       <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
         {/* Título */}
         <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Pricing
+          Suscripcion
         </h2>
 
         {/* Divisor */}
@@ -34,7 +34,7 @@ const PricingSection: React.FC = () => {
                 <span className="text-base">for one user</span>
               </div>
               <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <button className="mx-auto lg:mx-0 hover:underline bg-[#E63946] text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   Sign Up
                 </button>
               </div>
@@ -55,11 +55,11 @@ const PricingSection: React.FC = () => {
             </div>
             <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div className="w-full pt-6 text-4xl font-bold text-center">
-                £x.99
+              $150.000
                 <span className="text-base">/ per user</span>
               </div>
               <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <button className="mx-auto lg:mx-0 hover:underline bg-[#E63946] text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   Sign Up
                 </button>
               </div>
@@ -80,11 +80,11 @@ const PricingSection: React.FC = () => {
             </div>
             <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-                £x.99
+                $150.000
                 <span className="text-base">/ per user</span>
               </div>
               <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <button className="mx-auto lg:mx-0 hover:underline bg-[#E63946] text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                   Sign Up
                 </button>
               </div>

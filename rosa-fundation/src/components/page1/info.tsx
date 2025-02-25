@@ -5,7 +5,7 @@ const Info: React.FC = () => {
     <section className="bg-white border-b py-8">
       <div className="container max-w-5xl mx-auto m-8">
         <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Title
+          Informacion
         </h2>
         <div className="w-full mb-4">
           <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -14,20 +14,12 @@ const Info: React.FC = () => {
           {/* Left Column */}
           <div className="w-5/6 sm:w-1/2 p-6">
             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Lorem ipsum dolor sit amet
+              Campestre
             </h3>
-            <p className="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-              ipsum eu nunc commodo posuere et sit amet ligula.
+            <p className="text-gray-600 mb-8 font-[Montserrat]">
+              los mejores espaciosy los mejores diseños
               <br />
-              <br />
-              Images from:{" "}
-              <a
-                className="text-pink-500 underline"
-                href="https://undraw.co/"
-              >
-                undraw.co
-              </a>
+              <br /> 
             </p>
           </div>
 
@@ -35,7 +27,7 @@ const Info: React.FC = () => {
           <div className="w-full sm:w-1/2 p-6">
             <img
               className="w-full sm:h-64 mx-auto"
-              src="/hero.png" // Cambia la ruta de la imagen si es necesario
+              src="../images/Info2.png" // Cambia la ruta de la imagen si es necesario
               alt="Hero"
             />
           </div>
@@ -47,7 +39,7 @@ const Info: React.FC = () => {
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <img
               className="w-5/6 sm:h-64 mx-auto"
-              src="/connected-world.svg" // Cambia la ruta de la imagen si es necesario
+              src="../images/Info1.png" // Cambia la ruta de la imagen si es necesario
               alt="Connected World"
             />
           </div>
@@ -56,20 +48,12 @@ const Info: React.FC = () => {
           <div className="w-full sm:w-1/2 p-6 mt-6">
             <div className="align-middle">
               <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Lorem ipsum dolor sit amet
+                Excelente compañia
               </h3>
-              <p className="text-gray-600 mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+              <p className="text-gray-600 mb-8 font-[Montserrat]  ">
+                Amigos, familia personas
                 <br />
                 <br />
-                Images from:{" "}
-                <a
-                  className="text-pink-500 underline"
-                  href="https://undraw.co/"
-                >
-                  undraw.co
-                </a>
               </p>
             </div>
           </div>

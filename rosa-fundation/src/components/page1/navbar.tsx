@@ -50,7 +50,7 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
               <a
-                className={`inline-block py-2 px-4 font-bold no-underline ${
+                className={`inline-block text-lg py-2 px-4 no-underline ${
                   isScrolled ? "text-gray-800" : "text-white"
                 }`}
                 href="#"
@@ -60,7 +60,7 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4 ${
+                className={`inline-block no-underline text-lg hover:text-gray-800 hover:text-underline py-2 px-4 ${
                   isScrolled ? "text-gray-800" : "text-white"
                 }`}
                 href="#"
@@ -70,7 +70,7 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4 ${
+                className={`inline-block no-underline text-lg hover:text-gray-800 hover:text-underline py-2 px-4  ${
                   isScrolled ? "text-gray-800" : "text-white"
                 }`}
                 href="#"
@@ -81,10 +81,12 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           </ul>
           <button
             id="navAction"
-            className={`mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out ${
+            className={`mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 
+              shadow opacity-75 focus:outline-none focus:shadow-outline transform transition 
+              hover:scale-105 duration-300 ease-in-out font-[Montserrat] ${
               isScrolled
-                ? "gradient text-white"
-                : "bg-white text-gray-800"
+                ? "bg-[#00D4A1] text-white"
+                : "bg-[#E63946] text-white"
             }`}
             onClick={onSwitch}
           >
