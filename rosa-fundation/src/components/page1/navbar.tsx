@@ -16,14 +16,16 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
       }`}
     >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div className="pl-4 flex items-center">
+        <div className="pl-4 flex items-center font-[Montserrat]">
           <a
-            className={`toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl ${
+            className={`toggleColour no-underline hover:no-underline font-bold text-3xl ${
               isScrolled ? "text-gray-800" : "text-white"
             }`}
             href="#"
           >
             <img src={`${isScrolled ? "../images/logo1.png" : "../images/logo.png"}`} alt="logo fundacion rosa" className="h-15 inline"/>
+            <span className={`pl-8 ${isScrolled ? "text-[#008AA7]" : "text-white"}`}>Fundación</span>
+            <span className="text-gray-500">Rosa</span>
           </a>
         </div>
         <div className="block lg:hidden pr-4">
@@ -47,10 +49,10 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           } text-black p-4 lg:p-0 z-20`}
           id="nav-content"
         >
-          <ul className="list-reset lg:flex justify-end flex-1 items-center">
-            <li className="mr-3">
+          <ul className="list-reset lg:flex justify-end flex-1 items-center text-base font-[Montserrat]">
+          <li className="mr-3">
               <a
-                className={`inline-block text-lg py-2 px-4 no-underline ${
+                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
                   isScrolled ? "text-gray-800" : "text-white"
                 }`}
                 href="#"
@@ -60,7 +62,7 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline text-lg hover:text-gray-800 hover:text-underline py-2 px-4 ${
+                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
                   isScrolled ? "text-gray-800" : "text-white"
                 }`}
                 href="#"
@@ -70,27 +72,47 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline text-lg hover:text-gray-800 hover:text-underline py-2 px-4  ${
+                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
                   isScrolled ? "text-gray-800" : "text-white"
                 }`}
                 href="#"
               >
-                Galeria
+                Instalaciones
+              </a>
+            </li>
+            <li className="mr-3">
+              <a
+                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
+                  isScrolled ? "text-gray-800" : "text-white"
+                }`}
+                href="#"
+              >
+                Informacion
+              </a>
+            </li>
+            <li className="mr-3">
+              <a
+                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
+                  isScrolled ? "text-gray-800" : "text-white"
+                }`}
+                href="#"
+              >
+                Preguntas
               </a>
             </li>
           </ul>
           <button
             id="navAction"
-            className={`mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 
-              shadow opacity-75 focus:outline-none focus:shadow-outline transform transition 
-              hover:scale-105 duration-300 ease-in-out font-[Montserrat] ${
+            className={`mx-auto lg:mx-0 hover:text-underline rounded-lg mt-4 lg:mt-0 py-2 px-8 
+              shadow-sm shadow-[rgb(0,0,0,0.7)] opacity-100 focus:outline-none focus:shadow-outline transform transition 
+              hover:scale-103 hover:font-bold bg-[#008AA7] hover:bg-[#A0A0A0] duration-300 ease-in-out font-[Montserrat] ${
               isScrolled
                 ? "bg-[#00D4A1] text-white"
-                : "bg-[#E63946] text-white"
+                : "bg-[#008AA7] text-white"
             }`}
             onClick={onSwitch}
           >
-            Cambiar Diseño 2
+            Contacto
           </button>
         </div>
       </div>
