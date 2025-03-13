@@ -36,3 +36,17 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu computadora:
 
 1. **Crear el archivo .env**
     Crear el archivo .env con las credenciales de Firebase
+
+
+
+
+## Elementos instalados por el radicador del proyecto en orden:
+nota: solo se ejecuto por el radicador del proyecto, de resto de colaboradores solo deben ejecutar 
+
+npm install
+
+1. **React Router Dom**
+    npm install react-router-dom
+
+2. **React Router Dom para el uso de TailWind**
+    npm install @types/react-router-dom --save-dev
