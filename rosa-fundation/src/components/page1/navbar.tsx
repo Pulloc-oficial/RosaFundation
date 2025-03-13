@@ -16,16 +16,14 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
       }`}
     >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div className="pl-4 flex items-center font-[Montserrat]">
+        <div className="pl-4 flex items-center font-[Montserrat] font-semibold">
           <a
             className={`toggleColour no-underline hover:no-underline font-bold text-3xl ${
               isScrolled ? "text-gray-800" : "text-white"
             }`}
             href="#"
           >
-            <img src={`${isScrolled ? "../images/logo1.png" : "../images/logo.png"}`} alt="logo fundacion rosa" className="h-15 inline"/>
-            <span className={`pl-8 ${isScrolled ? "text-[#008AA7]" : "text-white"}`}>Fundación</span>
-            <span className="text-gray-500">Rosa</span>
+            <img src={`${isScrolled ? "../images/logo1.png" : "../images/logo.png"}`} alt="logo fundacion rosa" className="h-15 inline"/> 
           </a>
         </div>
         <div className="block lg:hidden pr-4">
@@ -49,11 +47,11 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           } text-black p-4 lg:p-0 z-20`}
           id="nav-content"
         >
-          <ul className="list-reset lg:flex justify-end flex-1 items-center text-base font-[Montserrat]">
+          <ul className="list-reset lg:flex justify-end flex-1 items-center text-base font-montserrat-bold">
           <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-800" : "text-white"
+                className={`inline-block no-underline hover:text-underline py-2 px-3 ${
+                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
                 }`}
                 href="#"
               >
@@ -62,8 +60,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-800" : "text-white"
+                className={`inline-block no-underline hover:text-underline py-2 px-3 ${
+                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
                 }`}
                 href="#"
               >
@@ -72,8 +70,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-800" : "text-white"
+                className={`inline-block no-underline hover:text-underline py-2 px-3 ${
+                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
                 }`}
                 href="#"
               >
@@ -82,8 +80,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-800" : "text-white"
+                className={`inline-block no-underline hover:text-underline py-2 px-3 ${
+                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
                 }`}
                 href="#"
               >
@@ -92,8 +90,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:font-bold hover:text-gray-800 hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-800" : "text-white"
+                className={`inline-block no-underline hover:text-underline py-2 px-3 ${
+                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
                 }`}
                 href="#"
               >

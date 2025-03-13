@@ -2,40 +2,19 @@
 
 .gradient {
   background: linear-gradient(90deg, rgb(0, 171, 207) 0%, rgb(165, 224, 217) 100%);
-}
+} 
 
-.comic-neue-light {
-  font-family: "Comic Neue", serif;
-  font-weight: 300;
+
+.montserrat-bold> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
 }
 
-.comic-neue-regular {
-  font-family: "Comic Neue", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.comic-neue-bold {
-  font-family: "Comic Neue", serif;
+.lora-bold> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-}
-
-.comic-neue-light-italic {
-  font-family: "Comic Neue", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.comic-neue-regular-italic {
-  font-family: "Comic Neue", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.comic-neue-bold-italic {
-  font-family: "Comic Neue", serif;
-  font-weight: 700;
-  font-style: italic;
 }
