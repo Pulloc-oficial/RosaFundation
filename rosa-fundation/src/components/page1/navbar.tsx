@@ -2,7 +2,7 @@ import React from "react";
 import { useScroll } from "./context/scrollContext";
 
 interface Navbar1Props {
-  onSwitch: () => void;
+  onSwitch?: () => void;
 }
 
 const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
@@ -11,8 +11,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
   return (
     <nav
       id="header"
-      className={`fixed w-full z-30 top-0 text-white transition-all duration-300 ${
-        isScrolled ? "bg-white shadow" : ""
+      className={`fixed w-full z-30 top-0 text-white backdrop-blur-md transition-all duration-300  ${
+      isScrolled ? "bg-whie shadow" : ""
       }`}
     >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -51,7 +51,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
+                  isScrolled ? "text-gray-600 hover:text-gray-200" 
+                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
                 }`}
                 href="#"
               >
@@ -61,7 +62,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
+                  isScrolled ? "text-gray-600 hover:text-gray-200" 
+                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
                 }`}
                 href="#"
               >
@@ -71,7 +73,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
+                  isScrolled ? "text-gray-600 hover:text-gray-200" 
+                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
                 }`}
                 href="#"
               >
@@ -81,7 +84,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
+                  isScrolled ? "text-gray-600 hover:text-gray-200" 
+                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
                 }`}
                 href="#"
               >
@@ -91,7 +95,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" : "text-white hover:text-gray-600"
+                  isScrolled ? "text-gray-600 hover:text-gray-200" 
+                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
                 }`}
                 href="#"
               >
@@ -103,7 +108,7 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             id="navAction"
             className={`mx-auto lg:mx-0 hover:text-underline rounded-lg mt-4 lg:mt-0 py-2 px-8 
               shadow-sm shadow-[rgb(0,0,0,0.7)] opacity-100 focus:outline-none focus:shadow-outline transform transition 
-              hover:scale-103 hover:font-bold bg-[#008AA7] hover:bg-[#A0A0A0] duration-300 ease-in-out font-[Montserrat] ${
+              hover:scale-103 bg-[#008AA7] hover:bg-[#A0A0A0] duration-300 ease-in-out font-[Montserrat] ${
               isScrolled
                 ? "bg-[#00D4A1] text-white"
                 : "bg-[#008AA7] text-white"
