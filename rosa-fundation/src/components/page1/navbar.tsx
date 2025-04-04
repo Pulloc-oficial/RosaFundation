@@ -12,7 +12,7 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
     <nav
       id="header"
       className={`fixed w-full z-50 top-0 text-white backdrop-blur-md transition-all duration-300  ${
-      isScrolled ? "gradient" : "bg-white shadow"
+      isScrolled ? "bg-[#004B5A]" : "bg-white"
       }`}
     >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
