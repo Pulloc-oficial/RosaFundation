@@ -19,7 +19,7 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
         <div className="pl-4 flex items-center font-[Montserrat] font-semibold">
           <a
             className={`toggleColour no-underline hover:no-underline font-bold text-3xl ${
-              isScrolled ? "text-gray-800" : "text-white"
+              isScrolled ? "text-[#FFFFFF]" : "text-white"
             }`}
             href="#"
           >
@@ -51,8 +51,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" 
-                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
+                  isScrolled ? "text-[#FFFFFF] hover:text-[#57D700]" 
+                  : "text-[#004B5A] hover:text-[#57D700]"
                 }`}
                 href="#"
               >
@@ -62,8 +62,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" 
-                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
+                  isScrolled ? "text-[#FFFFFF] hover:text-[#57D700]" 
+                  : "text-[#004B5A] hover:text-[#57D700]"
                 }`}
                 href="#"
               >
@@ -73,8 +73,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" 
-                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
+                  isScrolled ? "text-[#FFFFFF] hover:text-[#57D700]" 
+                  : "text-[#004B5A] hover:text-[#57D700]"
                 }`}
                 href="#"
               >
@@ -84,8 +84,8 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             <li className="mr-3">
               <a
                 className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" 
-                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
+                  isScrolled ? "text-[#FFFFFF] hover:text-[#57D700]" 
+                  : "text-[#004B5A] hover:text-[#57D700]"
                 }`}
                 href="#"
               >
@@ -94,9 +94,9 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
             </li>
             <li className="mr-3">
               <a
-                className={`inline-block no-underline hover:text-underline py-2 px-3 ${
-                  isScrolled ? "text-gray-600 hover:text-gray-200" 
-                  : "text-white hover:rounded-lg hover:bg-[#00D4A1] hover:text-white"
+                className={`inline-block no-underline hover:text-underline py-2 px-3 pr-10 ${
+                  isScrolled ? "text-[#FFFFFF] hover:text-[#57D700]" 
+                  : "text-[#004B5A] hover:text-[#57D700]"
                 }`}
                 href="#"
               >
@@ -106,12 +106,13 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           </ul>
           <button
             id="navAction"
-            className={`mx-auto lg:mx-0 hover:text-underline rounded-lg mt-4 lg:mt-0 py-2 px-8 
-              shadow-sm shadow-[rgb(0,0,0,0.7)] opacity-100 focus:outline-none focus:shadow-outline transform transition 
-              hover:scale-103 bg-[#008AA7] hover:bg-[#A0A0A0] duration-300 ease-in-out font-[Montserrat] ${
+            className={`mx-auto lg:mx-0 lg:mt-0 mt-4 py-2 px-8 rounded-lg  
+              font-[Montserrat] 
+              shadow-md shadow-[rgb(0,0,0,0.7)] transitio duration-300 ease-in-out
+              focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#57D700]   ${
               isScrolled
-                ? "bg-[#00D4A1] text-white"
-                : "bg-[#008AA7] text-white"
+                ? "bg-[#57D700] hover:bg-[#4BC000] text-white"
+                : "bg-[#004B5A] hover:bg-[#003744] text-white"
             }`}
             onClick={onSwitch}
           >
