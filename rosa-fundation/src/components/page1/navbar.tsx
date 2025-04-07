@@ -11,25 +11,20 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
   return (
     <nav
       id="header"
-      className={`fixed w-full z-50 top-0 text-white backdrop-blur-md transition-all duration-300  ${
+      className={`font-[Montserrat] fixed w-full z-50 top-0 text-white backdrop-blur-md transition-all duration-300  ${
       isScrolled ? "bg-[#004B5A]" : "bg-white"
       }`}
     >
-      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div className="pl-4 flex items-center font-[Montserrat] font-semibold">
-          <a
-            className={`toggleColour no-underline hover:no-underline font-bold text-3xl ${
-              isScrolled ? "text-[#FFFFFF]" : "text-white"
-            }`}
-            href="#"
-          >
+      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-3 px-4">
+        <div className="flex items-center">
+          <a className="text-3xl font-bold" href="#">
             <img src={`${isScrolled ? "../images/logo1.png" : "../images/logo.png"}`} alt="logo fundacion rosa" className="h-15 inline"/> 
           </a>
         </div>
-        <div className="block lg:hidden pr-4">
+        <div className="block lg:hidden">
           <button
             id="nav-toggle"
-            className="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            className="p-2 text-[#004B5A] hover:text-[#57D700] transition duration-300"
           >
             <svg
               className="fill-current h-6 w-6"
