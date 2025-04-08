@@ -50,3 +50,9 @@ npm install
 
 2. **React Router Dom para el uso de TailWind**
     npm install @types/react-router-dom --save-dev
+
+3. **React-icons para el uso de iconos de React**
+    npm install react-icons
+    https://react-icons.github.io/react-icons/
+
+

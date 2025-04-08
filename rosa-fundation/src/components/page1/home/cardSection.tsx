@@ -1,87 +1,45 @@
 import React from "react";
+import { FaHandHoldingMedical, FaUsers, FaChalkboardTeacher } from "react-icons/fa";
 
 const CardsSection: React.FC = () => {
   return (
-    <section className="bg-white border-b py-8">
-      <div className="container mx-auto flex flex-wrap pt-4 pb-12">
-        {/* Título */}
-        <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Title
-        </h2>
+    <section className="bg-gray-100 py-16 px-6 md:px-20 font-[Montserrat] text-[#004B5A]">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">¿Quiénes somos?</h2>
+        <p className="text-lg mb-12 text-justify">
+          El consumo de <strong>sustancias psicoactivas</strong> y <strong>alcohol</strong> es una de las principales problemáticas de 
+          <strong> salud pública</strong>, que afecta tanto a individuos como a sus familias y comunidades. En respuesta, 
+          el centro de rehabilitación Rosa IPS <strong>(RICART)</strong> ofrece una <strong>atención integral</strong> y <strong>especializada</strong> 
+          a personas con <strong>adicciones</strong>, bajo la legislación colombiana, en especial la <strong>Ley 1641 de 2013</strong>.
+        </p>
 
-        {/* Divisor */}
-        <div className="w-full mb-4">
-          <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-
-        {/* Tarjeta 1 */}
-        <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-              <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                GETTING STARTED
+        <div className="grid md:grid-cols-3 gap-10 text-left text-[17px] items-start">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-justify md:text-left">
+            <FaHandHoldingMedical size={100} color="#57D700" />
+            <div className="flex flex-col justify-center">          
+              <p>
+                Desarrollamos programas, combinando apoyo 
+                 psicológico, médico y emocional.
               </p>
-              <div className="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
-              </div>
-              <p className="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-              </p>
-            </a>
-          </div>
-          <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div className="flex items-center justify-start">
-              <button className="mx-auto lg:mx-0 hover:underline bg-[#E63946] text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
-              </button>
             </div>
           </div>
-        </div>
 
-        {/* Tarjeta 2 */}
-        <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-              <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                GETTING STARTED
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-justify md:text-left">
+            <FaUsers size={100} color="#57D700" />
+            <div className="flex flex-col justify-center">
+              <p>
+                Promovemos la reintegración familiar y social a través de seguimiento continuo.
               </p>
-              <div className="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
-              </div>
-              <p className="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-              </p>
-            </a>
-          </div>
-          <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div className="flex items-center justify-center">
-              <button className="mx-auto lg:mx-0 hover:underline bg-[#E63946] text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
-              </button>
             </div>
           </div>
-        </div>
 
-        {/* Tarjeta 3 */}
-        <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-              <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                GETTING STARTED
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-justify md:text-left">
+            <FaChalkboardTeacher size={100} color="#57D700" />
+            <div className="flex flex-col justify-center">
+              <p>
+                Implementamos talleres y campañas educativas para sensibilizar sobre el 
+                riesgo del consumo.
               </p>
-              <div className="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
-              </div>
-              <p className="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-              </p>
-            </a>
-          </div>
-          <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div className="flex items-center justify-end">
-              <button className="mx-auto lg:mx-0 hover:underline bg-[#E63946] text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
-              </button>
             </div>
           </div>
         </div>
