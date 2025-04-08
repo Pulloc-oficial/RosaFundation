@@ -14,7 +14,7 @@ const Page1 = () => {
                 <Hero />
                 <Info />
                 <CardsSection />
-                <PricingSection />
+                    
                 <CallToAction /> 
                 <Footer />
             </ScrollProvider>
