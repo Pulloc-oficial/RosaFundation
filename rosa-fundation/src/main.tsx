@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.tsx'
 import { ScrollProvider } from './components/page1/context/scrollContext.tsx'
 
+
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ScrollProvider>
@@ -11,3 +13,4 @@ createRoot(document.getElementById('root')!).render(
     </ScrollProvider>
   </StrictMode>,
 )
+

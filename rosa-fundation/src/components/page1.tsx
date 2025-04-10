@@ -9,12 +9,12 @@ import PricingSection from "./page1/home/pricingSection.tsx";
 
 const Page1 = () => {
     return (
-        <div className="comic-neue-regular">
+        <div className="">
             <ScrollProvider>
                 <Hero />
                 <Info />
                 <CardsSection />
-                    
+                <PricingSection />
                 <CallToAction /> 
                 <Footer />
             </ScrollProvider>

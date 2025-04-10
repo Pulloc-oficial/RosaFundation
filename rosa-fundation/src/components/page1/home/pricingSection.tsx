@@ -1,25 +1,55 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, EffectFade } from 'swiper/modules';
+
+// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+
+import '../../../index.css'
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+const images = [
+  "../../images/F1.jpeg",
+  "../../images/F2.jpeg",
+  "../../images/F3.jpeg",
+  "../../images/F1.jpeg",
+  "../../images/F2.jpeg",
+  "../../images/F3.jpeg",
+  "../../images/F1.jpeg",
+  "../../images/F2.jpeg",
+];
 
 const PricingSection: React.FC = () => {
-  return (
-    <section className="bg-gray-100 py-16">
-      <Swiper
-        spaceBetween={30}
-        effect="fade"
-        navigation
-        pagination={{ clickable: true }}
-        modules={[Navigation, Pagination, EffectFade]}
-        className="mySwiper"
-      >
-        <SwiperSlide><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></SwiperSlide>
-        <SwiperSlide><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></SwiperSlide>
-      </Swiper>
+  return  (
+    <section className="bg-white py-12 w-screen overflow-hidden px-0">
+        <Swiper
+          slidesPerView={'auto'}
+          centeredSlides={true}
+          spaceBetween={20}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {images.map((src, index) => (
+            <SwiperSlide>
+              <img
+                src={src}
+                alt={`Slide ${index + 1}`}
+                className=""
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
     </section>
   );
 };

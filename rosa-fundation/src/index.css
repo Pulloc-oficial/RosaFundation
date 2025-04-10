@@ -21,15 +21,32 @@
 
 .swiper {
   width: 100%;
-  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Tamaños variables como en el ejemplo de Swiper */
+.swiper-slide:nth-child(3n) {
+  width: 40vw;
+}
+.swiper-slide:nth-child(2n) {
+  width: 60vw;
+}
+.swiper-slide:not(:nth-child(2n)):not(:nth-child(3n)) {
+  width: 80vw;
 }
 
 .swiper-slide img {
-  display: block;
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
