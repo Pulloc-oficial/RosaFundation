@@ -4,7 +4,8 @@ import { ScrollProvider } from "./page1/context/scrollContext.tsx";
 import Footer from "./page1/home/footer.tsx";
 import Hero from "./page1/home/hero.tsx";
 import Info from "./page1/home/info.tsx";
-import PricingSection from "./page1/home/pricingSection.tsx";
+import GallerySection from "./page1/home/gallerySection.tsx";
+import ContactSection from "./page1/home/contactSection.tsx";
 
 
 const Page1 = () => {
@@ -14,8 +15,9 @@ const Page1 = () => {
                 <Hero />
                 <Info />
                 <CardsSection />
-                <PricingSection />
+                <GallerySection />
                 <CallToAction /> 
+                <ContactSection />
                 <Footer />
             </ScrollProvider>
         </div>

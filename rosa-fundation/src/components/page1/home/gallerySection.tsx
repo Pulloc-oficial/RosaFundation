@@ -22,7 +22,7 @@ const images = [
   "../../images/F2.jpeg",
 ];
 
-const PricingSection: React.FC = () => {
+const GallerySection: React.FC = () => {
   return  (
     <section className="bg-white py-12 w-screen overflow-hidden px-0">
         <Swiper
@@ -54,4 +54,4 @@ const PricingSection: React.FC = () => {
   );
 };
 
-export default PricingSection;
+export default GallerySection;
