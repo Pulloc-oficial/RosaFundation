@@ -2,7 +2,7 @@ import React from "react";
 
 const Info: React.FC = () => {
   return (
-    <section className="w-full py-20 px-4 bg-white text-center">
+    <section className="w-full min-h-[calc(100vh-72px)] px-4 bg-white text-center content-center">
       <h2 className="text-4xl md:text-5xl font-[Montserrat] font-bold text-[#004B5A] mb-8">
         Centro para la rehabilitación
       </h2>

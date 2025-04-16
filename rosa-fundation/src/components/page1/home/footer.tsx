@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-<div className="font-[Montserrat] flex items-end w-full min-h-screen bg-white">
+<div className="font-[Montserrat] flex items-end w-full bg-white">
 
 <footer className="w-full text-gray-700 bg-gray-100 body-font">
     <div
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <a className ="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
             <img src="../images/logo.png" alt="logo fundacion rosa" className="h-15 inline"/> 
             </a>
-            <p className ="mt-2 text-sm text-gray-500">Centro campestre de rehabilitación para adictos</p>
+            <p className ="mt-2 text-xs text-gray-500">Centro campestre de rehabilitación para adictos</p>
             <div className="mt-4">
                 <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                     <a className="text-gray-500 cursor-pointer hover:text-gray-700">
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+                <h2 className="mb-3 text-sm font-semibold tracking-widest text-gray-900 uppercase title-font">Acerca de</h2>
                 <nav className="mb-10 list-none">
                     <li className="mt-3">
                         <a className="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                 </nav>
             </div>
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
+                <h2 className="mb-3 text-sm font-semibold tracking-widest text-gray-900 uppercase title-font">Soporte</h2>
                 <nav className="mb-10 list-none">
                     <li className="mt-3">
                         <a className="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
@@ -77,14 +77,14 @@ const Footer: React.FC = () => {
                 </nav>
             </div>
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Platform
+                <h2 className="mb-3 text-sm font-semibold tracking-widest text-gray-900 uppercase title-font">Platforma
                 </h2>
                 <nav className="mb-10 list-none">
                     <li className="mt-3">
-                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
+                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">Terminos y condiciones</a>
                     </li>
                     <li className="mt-3">
-                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">Servicios</a>
                     </li>
                     <li className="mt-3">
                         <a className="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
@@ -92,13 +92,13 @@ const Footer: React.FC = () => {
                 </nav>
             </div>
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+                <h2 className="mb-3 text-sm font-semibold tracking-widest text-gray-900 uppercase title-font">Contacto</h2>
                 <nav className="mb-10 list-none">
                     <li className="mt-3">
-                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
+                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">Enviar un mensaje</a>
                     </li>
                     <li className="mt-3">
-                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                        <a className="text-gray-500 cursor-pointer hover:text-gray-900">CRA@gmail.com</a>
                     </li>
                     <li className="mt-3">
                         <a className="text-gray-500 cursor-pointer hover:text-gray-900">+57 311-123-4567</a>

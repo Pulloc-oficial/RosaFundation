@@ -24,7 +24,7 @@ const images = [
 
 const GallerySection: React.FC = () => {
   return  (
-    <section className="bg-white py-12 w-screen overflow-hidden px-0">
+    <section className="bg-white min-h-[calc(100vh-72px)] content-center w-screen overflow-hidden px-0">
         <Swiper
           slidesPerView={'auto'}
           centeredSlides={true}

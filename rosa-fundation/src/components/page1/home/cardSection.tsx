@@ -3,7 +3,7 @@ import { FaHandHoldingMedical, FaUsers, FaChalkboardTeacher } from "react-icons/
 
 const CardsSection: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-16 px-6 md:px-20 font-[Montserrat] text-[#004B5A]">
+    <section className="bg-gray-100 min-h-[calc(100vh-72px)] content-center px-6 md:px-20 font-[Montserrat] text-[#004B5A]">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">¿Quiénes somos?</h2>
         <p className="text-lg mb-12 text-justify">
