@@ -46,13 +46,19 @@ nota: solo se ejecuto por el radicador del proyecto, de resto de colaboradores s
 npm install
 
 1. **React Router Dom**
+    siempre en cd /rosa-fundation
     npm install react-router-dom
 
 2. **React Router Dom para el uso de TailWind**
+    siempre en cd /rosa-fundation
     npm install @types/react-router-dom --save-dev
 
 3. **React-icons para el uso de iconos de React**
+    siempre en cd /rosa-fundation
     npm install react-icons
     https://react-icons.github.io/react-icons/
 
+4. **Swiper para galeria**
+    Siempre en cd /rosa-fundation
+    npm i swiper
 
