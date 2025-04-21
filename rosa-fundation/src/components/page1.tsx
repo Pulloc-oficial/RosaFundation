@@ -6,6 +6,7 @@ import Hero from "./page1/home/hero.tsx";
 import Info from "./page1/home/info.tsx";
 import GallerySection from "./page1/home/gallerySection.tsx";
 import ContactSection from "./page1/home/contactSection.tsx";
+import MapSection from "./page1/home/mapSection.tsx";
 
 
 const Page1 = () => {
@@ -16,7 +17,7 @@ const Page1 = () => {
                 <Info />
                 <CardsSection />
                 <GallerySection />
-                <CallToAction /> 
+                <MapSection /> 
                 <ContactSection />
                 <Footer />
             </ScrollProvider>
