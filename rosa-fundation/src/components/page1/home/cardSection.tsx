@@ -5,7 +5,6 @@ const CardsSection: React.FC = () => {
   return (
     <section className="bg-gray-100 min-h-[calc(100vh-72px)] content-center px-6 md:px-20 font-[Montserrat] text-[#004B5A]">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">¿Quiénes somos?</h2>
         <p className="text-lg mb-12 text-justify">
           El consumo de <strong>sustancias psicoactivas</strong> y <strong>alcohol</strong> es una de las principales problemáticas de 
           <strong> salud pública</strong>, que afecta tanto a individuos como a sus familias y comunidades. En respuesta, 

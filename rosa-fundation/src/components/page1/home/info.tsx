@@ -9,7 +9,7 @@ const Info: React.FC = () => {
 
       <div className="inline-block border-2 border-[#57D700] px-6 py-3">
         <p className="text-2xl font-[Montserrat] font-bold text-[#004B5A]">
-          311 123 4567
+          333 123 4567
         </p>
       </div>
     </section>

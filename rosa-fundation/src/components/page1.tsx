@@ -1,4 +1,3 @@
-import CallToAction from "./page1/home/callToAction.tsx";
 import CardsSection from "./page1/home/cardSection.tsx";
 import { ScrollProvider } from "./page1/context/scrollContext.tsx";
 import Footer from "./page1/home/footer.tsx";
@@ -7,6 +6,7 @@ import Info from "./page1/home/info.tsx";
 import GallerySection from "./page1/home/gallerySection.tsx";
 import ContactSection from "./page1/home/contactSection.tsx";
 import MapSection from "./page1/home/mapSection.tsx";
+import InspiracionSection from "./page1/home/inspiracionSection.tsx";
 
 
 const Page1 = () => {
@@ -17,6 +17,7 @@ const Page1 = () => {
                 <Info />
                 <CardsSection />
                 <GallerySection />
+                <InspiracionSection />
                 <MapSection /> 
                 <ContactSection />
                 <Footer />
