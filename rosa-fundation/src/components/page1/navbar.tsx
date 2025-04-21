@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import { useScroll } from "./context/scrollContext";
+import { Link } from "react-router-dom";
 
 interface Navbar1Props {
   onSwitch?: () => void;
 }
+
+const menuItems = [
+  { name: "Nosotros", path: "/nosotros" },
+  { name: "Servicios", path: "/servicios" },
+  { name: "Instalaciones", path: "/instalaciones" },
+  { name: "Informacion", path: "/informacion" },
+  { name: "Preguntas", path: "/preguntas" },
+];
 
 const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
   const { isScrolled } = useScroll();
@@ -52,23 +61,21 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
           id="nav-content"
         >
           <ul className="lg:flex justify-end flex-1 items-center space-x-4 pr-5">
-            {["Nosotros", "Servicios", "Instalaciones", "Informacion", "Preguntas"].map(
-              (item) => (
-                <li key={item}>
-                  <a
-                    onClick={() => setMenuOpen(false)}
-                    className={`inline-block py-2 px-3 transition-colors duration-200 ${
-                      isScrolled
-                        ? "text-white hover:text-[#57D700]"
-                        : "text-[#004B5A] hover:text-[#57D700]"
-                    }`}
-                    href="#"
-                  >
-                    {item}
-                  </a>
-                </li>
-              )
-            )}
+            {menuItems.map(({ name, path }) => (
+              <li key={name}>
+                <Link
+                  onClick={() => setMenuOpen(false)}
+                  className={`inline-block py-2 px-3 transition-colors duration-200 ${
+                    isScrolled
+                      ? "text-white hover:text-[#57D700]"
+                      : "text-[#004B5A] hover:text-[#57D700]"
+                  }`}
+                  to={path}
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
           </ul>
           <button
             id="navAction"

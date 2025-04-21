@@ -1,6 +1,5 @@
 import CardsSection from "./page1/home/cardSection.tsx";
 import { ScrollProvider } from "./page1/context/scrollContext.tsx";
-import Footer from "./page1/home/footer.tsx";
 import Hero from "./page1/home/hero.tsx";
 import Info from "./page1/home/info.tsx";
 import GallerySection from "./page1/home/gallerySection.tsx";
@@ -20,7 +19,6 @@ const Page1 = () => {
                 <InspiracionSection />
                 <MapSection /> 
                 <ContactSection />
-                <Footer />
             </ScrollProvider>
         </div>
     );
