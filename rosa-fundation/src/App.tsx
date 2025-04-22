@@ -7,12 +7,14 @@ import Preguntas from './components/page1/pages/preguntas';
 import Instalaciones from './components/page1/pages/instalaciones';
 import Servicios from './components/page1/pages/servicios';
 import Nosotros from './components/page1/pages/nosotros';
+import ScrollToTop from './components/page1/scrollToTop';
 
 
 function App() {
   return (
     <Router>
       <div className="leading-normal tracking-normal text-white gradient">
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Page1 />} />
