@@ -4,6 +4,10 @@
   background: linear-gradient(90deg, rgb(0, 171, 207) 0%, rgb(165, 224, 217) 100%);
 } 
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .montserrat-bold> {
   font-family: "Montserrat", sans-serif;
