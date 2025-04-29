@@ -70,7 +70,7 @@ const accordionData: AccordionItem[] = [
   },
   {
     id: 4,
-    title: "Nuestros Objetivoss",
+    title: "Nuestros Objetivos",
     content: (
       <div className="space-y-6">
         <div>
@@ -124,7 +124,7 @@ const Nosotros: React.FC = () => {
   return (
     <section className="min-h-[calc(100vh-72px)] py-50 w-full bg-white px-6 md:px-20 mx-auto text-gray-800">      
       <div className="container mx-auto px-4 flex flex-col md:flex-row md:gap-8 gap-y-8 mb-12">
-        <div className="md:w-3/5">
+        <div className="md:w-3/5 md:pr-10 ms:pr-0">
           <h1 className="text-4xl font-[Montserrat] font-bold text-[#004B5A] mb-8 text-left">Sobre Nosotros</h1>
           <p className="text-lg mb-12 text-justify leading-relaxed">
               En <strong className='text-[#004B5A]'>RICART</strong>, nos dedicamos a brindar atención integral a personas que enfrentan problemas 
@@ -134,12 +134,12 @@ const Nosotros: React.FC = () => {
               en un entorno acogedor y seguro, promovemos la transformación de vidas, el fortalecimiento de 
               vínculos familiares y el retorno saludable a la sociedad.
           </p>
-          <div className="w-full max-w-xl mx-auto">
+          <div className="w-full mx-auto">
             {accordionData.map((item) => (
-              <div key={item.id} className="border-b border-slate-200">
+              <div key={item.id} className="border-b border-slate-400">
                 <button
                   onClick={() => handleToggle(item.id)}
-                  className="w-full flex justify-between items-center py-5 text-slate-800 focus:outline-none"
+                  className="w-full flex justify-between items-center py-5 text-3xl text-[#004B5A] focus:outline-none"
                 >
                   <span>{item.title}</span>
                   <span className="text-slate-800 transition-transform duration-300">
@@ -148,7 +148,7 @@ const Nosotros: React.FC = () => {
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openItem === item.id ? "max-h-40" : "max-h-0"
+                    openItem === item.id ? "max-h-200" : "max-h-0"
                   }`}
                 >
                   <div className="pb-5 text-sm text-slate-500 px-2">{item.content}</div>
