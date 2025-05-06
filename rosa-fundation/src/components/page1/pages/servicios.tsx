@@ -1,23 +1,60 @@
 import { useEffect, useRef, useState } from "react";
 
-const years = [
-  "Evaluación y Diagnóstico", 
-  "Tratamientos de Desintoxicación", 
-  "Terapias Psicológicas", 
-  "Terapias Grupales y de Apoyo", 
-  "Terapias Complementarias", 
-  "Terapia Deportiva",
-  "Terapia Cognitivo-Conductual (TCC)",
-  "Terapia Motivacional",
-  "Seguimiento y Apoyo Post-Rehabilitación"
+const itemServicios = [
+  {
+    titulo: "Evaluación y Diagnóstico", 
+    descripcion: "Evaluación integral, análisis médico, psicológico y social. Diagnóstico preciso, plan de tratamiento personalizado.", 
+    imagen: "",
+  },
+  {
+    titulo: "Tratamientos de Desintoxicación", 
+    descripcion: "Desintoxicación médicamente supervisada, manejo de síntomas de abstinencia.Alivio de síntomas, seguridad y comodidad del paciente.", 
+    imagen: "",
+  },
+  {
+    titulo: "Terapias Psicológicas", 
+    descripcion: "Terapia Cognitivo-Conductual (TCC), Terapia Motivacional, Terapia Familiar.Cambio de patrones de pensamiento, apoyo familiar.", 
+    imagen: "",
+  },
+  {
+    titulo:  "Terapias Grupales y de Apoyo", 
+    descripcion: "Sesiones de terapia grupal, grupos de apoyo continuos.Apoyo mutuo, desarrollo de habilidades sociales.", 
+    imagen: "",  
+  },
+  {
+    titulo: "Terapias Complementarias", 
+    descripcion: "Meditación y Yoga, Acupuntura, Asesoramiento Nutricional.Reducción del estrés, mejora del bienestar general.", 
+    imagen: "",
+  },
+  {
+    titulo: "Terapia Deportiva",
+    descripcion: "Actividades deportivas, programas de ejercicio personalizados. Multicanchas.Mejora de la salud física, reducción del estrés.", 
+    imagen: "",
+  },
+  {
+    titulo: "Terapia Cognitivo-Conductual (TCC)",
+    descripcion: "Identificación de Patrones de Pensamiento Desarrollo de Habilidades de Afrontamiento", 
+    imagen: "",
+  },
+  {
+    titulo: "Terapia Motivacional",
+    descripcion: "Entrevista Motivacional: Utilizamos técnicas de entrevista motivacional para ayudar a los pacientes a reconocer y aumentar su motivación interna para el cambio.", 
+    imagen: "",
+  },
+  {
+    titulo: "Seguimiento y Apoyo Post-Rehabilitación",
+    descripcion: "Seguimiento y Apoyo Post-Rehabilitación", 
+    imagen: "",
+  },
+  
 ];
 
 function servicios() {
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
-  const [activeYear, setActiveYear] = useState<string>(years[0]);
+  const [activeYear, setActiveYear] = useState<string>(itemServicios[0].titulo);
 
-  const scrollToYear = (year: string) => {
-    sectionRefs.current[year]?.scrollIntoView({ behavior: "smooth" });
+  const scrollToYear = (item: string) => {
+    sectionRefs.current[item]?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -25,8 +62,8 @@ function servicios() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && entry.target.id.startsWith("year-")) {
-            const year = entry.target.id.replace("year-", "");
-            setActiveYear(year);
+            const item = entry.target.id.replace("year-", "");
+            setActiveYear(item);
           }
         });
       },
@@ -36,8 +73,8 @@ function servicios() {
       }
     );
 
-    years.forEach((year) => {
-      const ref = sectionRefs.current[year];
+    itemServicios.forEach((item) => {
+      const ref = sectionRefs.current[item.titulo];
       if (ref) observer.observe(ref);
     });
 
@@ -54,38 +91,45 @@ function servicios() {
       {/* Contenedor principal */}
       <div className="flex">
         {/* Columna izquierda: Fechas */}
-        <div className="w-1/4 sticky top-[140px] h-[calc(100vh-72px)] p-4 bg-white border-r border-gray-200">
-          {years.map((year) => (
+        <div className="w-1/4 sticky top-[140px] h-[calc(100vh-72px)] p-4 bg-white">
+          {itemServicios.map((item) => (
             <button
-              key={year}
-              onClick={() => scrollToYear(year)}
-              className={`block mb-4 font-semibold text-left transition-colors ${
-                activeYear === year ? "text-green-600" : "text-gray-700"
-              }`}
+              key={item.titulo}
+              onClick={() => scrollToYear(item.titulo)}
+              className={`w-full text-left text-xl px-4 py-3 transition-all duration-300 border-b border-b-[#57D700]
+                ${activeYear === item.titulo 
+                  ? "bg-[#57D700] text-white" 
+                  : "bg-white text-[#004B5A] hover:bg-gray-100"}`}
             >
-              {year}
+              {item.titulo}
             </button>
           ))}
         </div>
-  
         {/* Contenido derecho */}
         <div className="w-3/4 p-8 scroll-mt-[300px]">
-          {years.map((year) => (
-            <section
-              key={year}
-              ref={(el) => {
-                sectionRefs.current[year] = el;
-              }}
-              id={`year-${year}`}
-              className="min-h-screen "
-            >
-              <h2 className="text-4xl font-bold text-green-600">{year}</h2>
-              <p className="mt-4 text-gray-700 leading-relaxed">
-                Contenido histórico del año <strong>{year}</strong>. Puedes
-                reemplazar esto por imágenes, texto institucional, citas, etc.
-                Esta es una sección amplia para asegurar que el scroll se detecte
-                correctamente por el IntersectionObserver.
-              </p>
+            {itemServicios.map((item, index) => (
+              <section
+                key={item.titulo}
+                ref={(el) => {
+                  sectionRefs.current[item.titulo] = el;
+                }}
+                id={`year-${item.titulo}`}
+                className="min-h-screen "
+              >
+                {/* Alterna dirección con flex-row o flex-row-reverse */}
+                <div className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center gap-6`}>
+                  <div className="w-3/4 p-8">
+                    <h2 className="text-4xl font-bold text-[#57D700]">
+                      {item.titulo}
+                    </h2>
+                    <p className="mt-4 text-gray-700 leading-relaxed">
+                      {item.descripcion}  
+                    </p>
+                  </div>
+                  <div className="w-1/4">
+                    {item.imagen}
+                  </div>
+                </div>
             </section>
           ))}
         </div>
