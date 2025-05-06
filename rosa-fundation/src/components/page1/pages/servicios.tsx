@@ -4,47 +4,47 @@ const itemServicios = [
   {
     titulo: "Evaluación y Diagnóstico", 
     descripcion: "Evaluación integral, análisis médico, psicológico y social. Diagnóstico preciso, plan de tratamiento personalizado.", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   {
     titulo: "Tratamientos de Desintoxicación", 
     descripcion: "Desintoxicación médicamente supervisada, manejo de síntomas de abstinencia.Alivio de síntomas, seguridad y comodidad del paciente.", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   {
     titulo: "Terapias Psicológicas", 
     descripcion: "Terapia Cognitivo-Conductual (TCC), Terapia Motivacional, Terapia Familiar.Cambio de patrones de pensamiento, apoyo familiar.", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   {
     titulo:  "Terapias Grupales y de Apoyo", 
     descripcion: "Sesiones de terapia grupal, grupos de apoyo continuos.Apoyo mutuo, desarrollo de habilidades sociales.", 
-    imagen: "",  
+    imagen: "images/Service.jpeg",
   },
   {
     titulo: "Terapias Complementarias", 
     descripcion: "Meditación y Yoga, Acupuntura, Asesoramiento Nutricional.Reducción del estrés, mejora del bienestar general.", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   {
     titulo: "Terapia Deportiva",
     descripcion: "Actividades deportivas, programas de ejercicio personalizados. Multicanchas.Mejora de la salud física, reducción del estrés.", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   {
     titulo: "Terapia Cognitivo-Conductual (TCC)",
     descripcion: "Identificación de Patrones de Pensamiento Desarrollo de Habilidades de Afrontamiento", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   {
     titulo: "Terapia Motivacional",
     descripcion: "Entrevista Motivacional: Utilizamos técnicas de entrevista motivacional para ayudar a los pacientes a reconocer y aumentar su motivación interna para el cambio.", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   {
     titulo: "Seguimiento y Apoyo Post-Rehabilitación",
     descripcion: "Seguimiento y Apoyo Post-Rehabilitación", 
-    imagen: "",
+    imagen: "images/Service.jpeg",
   },
   
 ];
@@ -69,7 +69,7 @@ function servicios() {
       },
       {
         rootMargin: "0px 0px -50% 0px", // activa cuando está en el centro
-        threshold: 0.5,
+        threshold: 0.4,
       }
     );
 
@@ -90,8 +90,8 @@ function servicios() {
   
       {/* Contenedor principal */}
       <div className="flex">
-        {/* Columna izquierda: Fechas */}
-        <div className="w-1/4 sticky top-[140px] h-[calc(100vh-72px)] p-4 bg-white">
+        {/* Columna izquierda: */}
+        <div className="w-1/4 sticky top-[100px] h-[calc(100vh-72px)] p-4 bg-white">
           {itemServicios.map((item) => (
             <button
               key={item.titulo}
@@ -106,7 +106,7 @@ function servicios() {
           ))}
         </div>
         {/* Contenido derecho */}
-        <div className="w-3/4 p-8 scroll-mt-[300px]">
+        <div className="w-3/4 p-8 top-[140px]">
             {itemServicios.map((item, index) => (
               <section
                 key={item.titulo}
@@ -114,10 +114,10 @@ function servicios() {
                   sectionRefs.current[item.titulo] = el;
                 }}
                 id={`year-${item.titulo}`}
-                className="min-h-screen "
+                className="scroll-mt-[80px] p-4"
               >
                 {/* Alterna dirección con flex-row o flex-row-reverse */}
-                <div className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center gap-6`}>
+                <div className={`flex ${index % 2 === 0 ? 'flex-row bg-gray-100' : 'flex-row-reverse'} items-center gap-2`}>
                   <div className="w-3/4 p-8">
                     <h2 className="text-4xl font-bold text-[#57D700]">
                       {item.titulo}
@@ -126,11 +126,12 @@ function servicios() {
                       {item.descripcion}  
                     </p>
                   </div>
-                  <div className="w-1/4">
-                    {item.imagen}
+                  <div className="w-1/4 p-4">
+                  <img 
+                    src={item.imagen}></img>
                   </div>
                 </div>
-            </section>
+              </section>
           ))}
         </div>
       </div>
