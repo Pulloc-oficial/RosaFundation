@@ -4,47 +4,47 @@ const itemServicios = [
   {
     titulo: "Evaluación y Diagnóstico", 
     descripcion: "Evaluación integral, análisis médico, psicológico y social. Diagnóstico preciso, plan de tratamiento personalizado.", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo: "Tratamientos de Desintoxicación", 
     descripcion: "Desintoxicación médicamente supervisada, manejo de síntomas de abstinencia.Alivio de síntomas, seguridad y comodidad del paciente.", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo: "Terapias Psicológicas", 
     descripcion: "Terapia Cognitivo-Conductual (TCC), Terapia Motivacional, Terapia Familiar.Cambio de patrones de pensamiento, apoyo familiar.", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo:  "Terapias Grupales y de Apoyo", 
     descripcion: "Sesiones de terapia grupal, grupos de apoyo continuos.Apoyo mutuo, desarrollo de habilidades sociales.", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo: "Terapias Complementarias", 
     descripcion: "Meditación y Yoga, Acupuntura, Asesoramiento Nutricional.Reducción del estrés, mejora del bienestar general.", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo: "Terapia Deportiva",
     descripcion: "Actividades deportivas, programas de ejercicio personalizados. Multicanchas.Mejora de la salud física, reducción del estrés.", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo: "Terapia Cognitivo-Conductual (TCC)",
     descripcion: "Identificación de Patrones de Pensamiento Desarrollo de Habilidades de Afrontamiento", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo: "Terapia Motivacional",
     descripcion: "Entrevista Motivacional: Utilizamos técnicas de entrevista motivacional para ayudar a los pacientes a reconocer y aumentar su motivación interna para el cambio.", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   {
     titulo: "Seguimiento y Apoyo Post-Rehabilitación",
     descripcion: "Seguimiento y Apoyo Post-Rehabilitación", 
-    imagen: "images/Service.jpeg",
+    imagen: "images/Service.png",
   },
   
 ];
