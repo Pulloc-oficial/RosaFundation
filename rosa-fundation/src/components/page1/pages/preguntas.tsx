@@ -11,37 +11,129 @@ interface AccordionItem {
 const accordionData: AccordionItem[] = [
   {
     id: 1,
-    title: "Pregunta 1",
+    title: "1. ¿Qué servicios ofrece Rosa IPS Centro Campestre de Rehabilitación Terapéutica para Adictos?",
     content: (
       <div className="space-y-6">
-        Respuesta generica a pregunta
+        Ofrecemos tratamiento integral para personas con adicciones a sustancias psicoactivas y alcohol, 
+        incluyendo evaluación diagnóstica, desintoxicación médica, terapias psicológicas, terapia 
+        cognitivo-conductual (TCC), terapia motivacional, apoyo nutricional, terapia deportiva y programas 
+        de seguimiento post-rehabilitación.
       </div>
     ),
   },
   {
     id: 2,
-    title: "Pregunta 2",
+    title: "2. ¿Cuál es el enfoque terapéutico de RICART?",
     content: (
       <div className="space-y-6">
-        Respuesta generica a pregunta
+        Nuestro enfoque es bio-psico-social, centrado en el ser humano. Combinamos atención médica, 
+        psicológica, terapias complementarias y reintegración social para lograr una recuperación integral 
+        y sostenible.
       </div>
     ),
   },
   {
     id: 3,
-    title: "Pregunta 3",
+    title: "3. ¿Qué profesionales conforman el equipo de atención?",
     content: (
       <div className="space-y-6">
-        Respuesta generica a pregunta
+        Contamos con un equipo multidisciplinario de médicos, psicólogos, psiquiatras, trabajadores 
+        sociales y terapeutas ocupacionales, todos comprometidos con brindar atención de alta calidad 
+        y basada en la evidencia científica.
       </div>
     ),
   },
   {
     id: 4,
-    title: "Pregunta 4",
+    title: "4. ¿Cómo es el proceso de desintoxicación en Rosa IPS?",
     content: (
       <div className="space-y-6">
-        Respuesta generica a pregunta
+        La desintoxicación es supervisada médicamente, garantizando seguridad y control durante el manejo 
+        de los síntomas de abstinencia. Es el primer paso del tratamiento integral.
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    title: "5. ¿Qué tipo de terapias se implementan en el proceso de rehabilitación?",
+    content: (
+      <div className="space-y-6">
+        Utilizamos diversas terapias como la terapia cognitivo-conductual, terapia motivacional, 
+        terapia familiar, terapias grupales, yoga, meditación, acupuntura, terapia deportiva y 
+        asesoramiento nutricional.
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    title: "6. ¿Cómo es el entorno del centro de rehabilitación?",
+    content: (
+      <div className="space-y-6">
+        Nuestro centro está diseñado como un espacio campestre tipo hotel cinco estrellas, rodeado de 
+        naturaleza, con instalaciones modernas y cómodas que favorecen la recuperación emocional y física 
+        del paciente.
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    title: "7. ¿RICART atiende a personas no aseguradas o en situación de calle?",
+    content: (
+      <div className="space-y-6">
+        Sí. En cumplimiento de la Ley 1641 de 2013, brindamos atención integral a población no asegurada 
+        y en situación de calle, promoviendo su inclusión y reintegración social.
+      </div>
+    ),
+  },
+  {
+    id: 8,
+    title: "8. ¿Qué tecnologías utilizan para el seguimiento clínico?",
+    content: (
+      <div className="space-y-6">
+        Contamos con sistemas de monitoreo médico, software de gestión clínica y plataformas de 
+        telemedicina para consultas remotas, lo que permite un seguimiento eficiente y continuo del 
+        tratamiento.
+      </div>
+    ),
+  },
+  {
+    id: 9,
+    title: "9. ¿Se ofrece acompañamiento después del tratamiento",
+    content: (
+      <div className="space-y-6">
+        Sí. Implementamos programas de seguimiento post-rehabilitación, que incluyen consultas periódicas, 
+        reuniones grupales de apoyo y creación de redes comunitarias que fortalecen la sobriedad a largo plazo.
+      </div>
+    ),
+  },
+  {
+    id: 10,
+    title: "10. ¿Qué beneficios ofrece el enfoque personalizado de tratamiento?",
+    content: (
+      <div className="space-y-6">
+        Los programas personalizados permiten atender las necesidades médicas, psicológicas y sociales 
+        de cada paciente, asegurando una recuperación más efectiva, adaptada a su realidad y entorno.
+      </div>
+    ),
+  },
+  {
+    id: 11,
+    title: "11. ¿Qué diferencia a Rosa IPS de otros centros de rehabilitación?",
+    content: (
+      <div className="space-y-6">
+        Nuestra diferencia radica en la combinación de un enfoque clínico de alta calidad, instalaciones 
+        tipo resort campestre, innovación tecnológica y un fuerte compromiso con la dignidad y el bienestar 
+        humano.
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    title: "12. ¿Qué papel cumple la familia en el proceso de rehabilitación?",
+    content: (
+      <div className="space-y-6">
+        La familia es parte activa del tratamiento. Se realizan terapias familiares y talleres educativos 
+        para fortalecer los vínculos, mejorar la convivencia y apoyar la recuperación del paciente.
       </div>
     ),
   },
@@ -79,9 +171,9 @@ const Preguntas: React.FC = () => {
               <div key={item.id} className="border-b border-slate-400">
                 <button
                   onClick={() => handleToggle(item.id)}
-                  className="w-full flex justify-between items-center py-5 text-3xl text-[#004B5A] focus:outline-none"
+                  className="w-full flex justify-between content-left py-5 text-xl text-[#004B5A] focus:outline-none"
                 >
-                  <span>{item.title}</span>
+                  <span className='text-left text-start flex-grow'>{item.title}</span>
                   <span className="text-slate-800 transition-transform duration-300">
                     {openItem === item.id ? <DownIcon /> : <UpIcon />}
                   </span>
@@ -91,7 +183,7 @@ const Preguntas: React.FC = () => {
                     openItem === item.id ? "max-h-200" : "max-h-0"
                   }`}
                 >
-                  <div className="pb-5 text-sm text-slate-500 px-2">{item.content}</div>
+                  <div className="pb-5 text-base text-slate-500 px-2">{item.content}</div>
                 </div>
               </div>
             ))}

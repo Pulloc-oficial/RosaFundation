@@ -30,9 +30,9 @@ const Navbar: React.FC<Navbar1Props> = ({ onSwitch }) => {
     >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-3 px-4">
         <div className="flex items-center">
-          <a className="text-3xl font-bold" href="#">
+          <Link to="/" className="text-3xl font-bold">
             <img src={`${isScrolled ? "../images/logo.png" : "../images/logo1.png"}`} alt="logo fundacion rosa" className="h-15 inline"/> 
-          </a>
+          </Link>
         </div>
         <div className="block lg:hidden">
           <button
