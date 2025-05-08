@@ -10,7 +10,6 @@ const menuItems = [
   { name: "Nosotros", path: "/nosotros" },
   { name: "Servicios", path: "/servicios" },
   { name: "Instalaciones", path: "/instalacion" },
-  { name: "Informacion", path: "/informacion" },
   { name: "Preguntas", path: "/preguntas" },
 ];
 
